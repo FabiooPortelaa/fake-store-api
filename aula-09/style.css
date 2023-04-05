@@ -13,10 +13,18 @@
 #produtos .col-9 ul li {
 width: 32%;
 }
+#produtos .card-title,
 #produtos .card-text{
-    height: 70px;
     overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    white-space: pre-wrap;
 }
+#produtos .card-text{
+    -webkit-line-clamp: 3;
+}
+
 #categorias li h6 {
     width: 100%;
     display: flex;
@@ -25,5 +33,10 @@ width: 32%;
 }
 #categorias li span{
     display: block;
-   line-height: 26px;
+    line-height: 26px;
+}
+#produtos .card img{
+    object-fit: contain;
+    height: 250px;
+    padding: 16px;
 }
